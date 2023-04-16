@@ -1,5 +1,7 @@
 # TempConverter
 
+This repository contains the 10th homework from Accenture iOS Bootcamp 2023, to view all homework, visit [this repository](https://github.com/patricijav/HomeWorks).
+
 ### Screenshots from the app:
 
 <img src="https://user-images.githubusercontent.com/100102718/232320056-cd5066b9-b833-4fd3-8187-3dce76ff6f32.png" height="450">
