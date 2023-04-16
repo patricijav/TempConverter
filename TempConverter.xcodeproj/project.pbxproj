@@ -13,6 +13,8 @@
 		5099F9F429EB9716008BF3D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5099F9F229EB9716008BF3D3 /* Main.storyboard */; };
 		5099F9F629EB9718008BF3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5099F9F529EB9718008BF3D3 /* Assets.xcassets */; };
 		5099F9F929EB9718008BF3D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5099F9F729EB9718008BF3D3 /* LaunchScreen.storyboard */; };
+		5099FA0529EC13EE008BF3D3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099FA0429EC13EE008BF3D3 /* InfoViewController.swift */; };
+		5099FA0729EC1401008BF3D3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099FA0629EC1401008BF3D3 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5099F9F529EB9718008BF3D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5099F9F829EB9718008BF3D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5099F9FA29EB9718008BF3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5099FA0429EC13EE008BF3D3 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5099FA0629EC1401008BF3D3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				5099F9F029EB9716008BF3D3 /* ViewController.swift */,
+				5099FA0429EC13EE008BF3D3 /* InfoViewController.swift */,
+				5099FA0629EC1401008BF3D3 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 			files = (
 				5099F9F129EB9716008BF3D3 /* ViewController.swift in Sources */,
 				5099F9ED29EB9716008BF3D3 /* AppDelegate.swift in Sources */,
+				5099FA0529EC13EE008BF3D3 /* InfoViewController.swift in Sources */,
+				5099FA0729EC1401008BF3D3 /* SettingsViewController.swift in Sources */,
 				5099F9EF29EB9716008BF3D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

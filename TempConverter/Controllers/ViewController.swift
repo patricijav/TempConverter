@@ -34,28 +34,30 @@ class ViewController: UIViewController {
     }
     
     func updateLabelValues() {
-        var value = tempSlider.value
-        
-        let celsiusTemp = Int(value)
+        let celsiusTemp = Int(tempSlider.value)
         celsiusLabel.text = "\(celsiusTemp) Cº"
         
         let conversionChart = convertTempFrom(celsius: celsiusTemp)
         
-        let segmentSwitchIndex = segmentSwitch.selectedSegmentIndex
-        if segmentSwitchIndex == 0 {
+        if segmentSwitch.selectedSegmentIndex == 0 {
             resultLabel.text = "\(conversionChart.fahrenheit) Fº"
         } else {
             resultLabel.text = "\(conversionChart.kelvin) Kº"
         }
-        
-        // TODO: Dark light mode again. corner radius, create same info darklight mode
-        // make both of them like modals (like settings), but the same logic
     }
     
     func convertTempFrom(celsius: Int) -> (fahrenheit: Int, kelvin: Int) {
         let temparatureInDegreesFahrenheit = Int(1.8 * Double(celsius) + 32)
         let temperatureInKelvins = celsius + 273
         return (temparatureInDegreesFahrenheit, temperatureInKelvins)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "infoSegue" {
+            let infoViewController = segue.destination as! InfoViewController
+            infoViewController.studentName = "Patricija Vainovska"
+            infoViewController.appInfo = "This is an app for converting degrees from celsius, which we primarily use, to fahrenheit and kelvin, which are more used in America and science community respectively. To make it more interesting it also does cool stuff when changing mode to dark and back!"
+        }
     }
 }
 
